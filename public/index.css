@@ -1,0 +1,624 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, section, div, h1, h2, h3, h4, h5, a, p {
+/*  font-family: 'gtwalsheim';*/
+}
+
+html, body, section, div, h5, a, p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+p, li, ul, ol {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  vertical-align: top;
+}
+
+input[type="text"], input[type="textarea"], input[type="date"], select.form-control  {
+  height: 48px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.font-12 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.font-14-lg {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-21 {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.font-24 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-32 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.font-40 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.font-48 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.font-56 {
+  font-size: 56px;
+  line-height: 64px;
+}
+
+.font-64 {
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.font-100 {
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.lh1 {
+  line-height: 1em;
+}
+
+.lh1_5 {
+  line-height: 1.5em;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-copy-0 {
+  color: #a0a0a0;
+}
+
+.text-copy-1 {
+  color: #727272;
+}
+
+.text-copy-2 {
+  color: #202020;
+}
+
+.text-300 {
+  font-weight: 300;
+}
+
+.text-700 {
+  font-weight: 700;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-space-wide {
+  letter-spacing: 1.5;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.display-none {
+  display: none!important;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.m8 {
+  margin: 8px;
+}
+
+.m16 {
+  margin: 16px;
+}
+
+.m24 {
+  margin: 24px;
+}
+
+.m32 {
+  margin: 32px;
+}
+
+.m40 {
+  margin: 40px;
+}
+
+.m48 {
+  margin: 48px;
+}
+
+.m56 {
+  margin: 56px;
+}
+
+.m64 {
+  margin: 64px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb8 {
+  margin-bottom: 8px;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb24 {
+  margin-bottom: 24px;
+}
+
+.mb32 {
+  margin-bottom: 32px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mb48 {
+  margin-bottom: 48px;
+}
+
+.mb56 {
+  margin-bottom: 56px;
+}
+
+.mb64 {
+  margin-bottom: 64px;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.mt24 {
+  margin-top: 24px;
+}
+
+.mt32 {
+  margin-top: 32px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt48 {
+  margin-top: 48px;
+}
+
+.mt56 {
+  margin-top: 56px;
+}
+
+.mt64 {
+  margin-top: 64px;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.ml16 {
+  margin-left: 16px;
+}
+
+.ml24 {
+  margin-left: 24px;
+}
+
+.ml32 {
+  margin-left: 32px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.ml48 {
+  margin-left: 48px;
+}
+
+.ml56 {
+  margin-left: 56px;
+}
+
+.ml64 {
+  margin-left: 64px;
+}
+
+.mr0 {
+  margin-right: 0;
+}
+
+.mr8 {
+  margin-right: 8px;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+.mr24 {
+  margin-right: 24px;
+}
+
+.mr32 {
+  margin-right: 32px;
+}
+
+.mr40 {
+  margin-right: 40px;
+}
+
+.mr48 {
+  margin-right: 48px;
+}
+
+.mr56 {
+  margin-right: 56px;
+}
+
+.mr64 {
+  margin-right: 64px;
+}
+
+.mr72 {
+  margin-right: 72px;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.p8 {
+  padding: 8px;
+}
+
+.p16 {
+  padding: 16px;
+}
+
+.p24 {
+  padding: 24px;
+}
+
+.p32 {
+  padding: 32px;
+}
+
+.p40 {
+  padding: 40px;
+}
+
+.p48 {
+  padding: 48px;
+}
+
+.p56 {
+  padding: 56px;
+}
+
+.p64 {
+  padding: 64px;
+}
+
+.pb0 {
+  padding-bottom: 0;
+}
+
+.pb8 {
+  padding-bottom: 8px;
+}
+
+.pb16 {
+  padding-bottom: 16px;
+}
+
+.pb24 {
+  padding-bottom: 24px;
+}
+
+.pb32 {
+  padding-bottom: 32px;
+}
+
+.pb40 {
+  padding-bottom: 40px;
+}
+
+.pb48 {
+  padding-bottom: 48px;
+}
+
+.pb56 {
+  padding-bottom: 56px;
+}
+
+.pb64 {
+  padding-bottom: 64px;
+}
+
+.pt0 {
+  padding-top: 0;
+}
+
+.pt8 {
+  padding-top: 8px;
+}
+
+.pt16 {
+  padding-top: 16px;
+}
+
+.pt24 {
+  padding-top: 24px;
+}
+
+.pt32 {
+  padding-top: 32px;
+}
+
+.pt40 {
+  padding-top: 40px;
+}
+
+.pt48 {
+  padding-top: 48px;
+}
+
+.pt56 {
+  padding-top: 56px;
+}
+
+.pt64 {
+  padding-top: 64px;
+}
+
+.pl0 {
+  padding-left: 0;
+}
+
+.pl8 {
+  padding-left: 8px;
+}
+
+.pl16 {
+  padding-left: 16px;
+}
+
+.pl24 {
+  padding-left: 24px;
+}
+
+.pl32 {
+  padding-left: 32px;
+}
+
+.pl40 {
+  padding-left: 40px;
+}
+
+.pl48 {
+  padding-left: 48px;
+}
+
+.pl56 {
+  padding-left: 56px;
+}
+
+.pl64 {
+  padding-left: 64px;
+}
+
+.pr0 {
+  padding-right: 0;
+}
+
+.pr8 {
+  padding-right: 8px;
+}
+
+.pr16 {
+  padding-right: 16px;
+}
+
+.pr24 {
+  padding-right: 24px;
+}
+
+.pr32 {
+  padding-right: 32px;
+}
+
+.pr40 {
+  padding-right: 40px;
+}
+
+.pr48 {
+  padding-right: 48px;
+}
+
+.pr56 {
+  padding-right: 56px;
+}
+
+.pr64 {
+  padding-right: 64px;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border {
+  border: 1px solid #dcdcdc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.border-top {
+  border-top: 1px solid #dcdcdc;
+}
+
+.position-fixed {
+ position: fixed;
+}
+
+.box-shadow {
+  box-shadow: 0px 0px 16px rgba(0,0,0,0.12);
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.vh-100 {
+  min-height: 100vh;
+}
+
+.card {
+  background: white;
+  border: none;
+  box-shadow: 0px 0px 16px rgba(0,0,0,0.12);
+}
+
+.card-lg {
+  padding: 40px;
+}
+
+.card-md {
+  padding: 24px;
+}
+
+#side-nav {
+  z-index: 2;
+  min-height: 100vh;
+  width: 260px;
+  box-shadow: 4px 0px 8px rgba(0,0,0,0.12);
+  background-color: #ffffff;
+}
+
+#side-nav-temp {
+  z-index: 2;
+  min-height: 100vh;
+  width: 208px;
+  box-shadow: 4px 0px 8px rgba(0,0,0,0.12);
+  background-color: #ffffff;
+}
+
+#main-content {
+  background: #fafafa;
+}
+
+.form-container {
+  width: 50vw;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.form-container.form-container-phone {
+  min-width: 322px;
+  min-height: 691px;
+  width: 42vh;
+  height: 90vh;
+  border-radius: 40px;
+  border: 16px solid #202020;
+  overflow: scroll;
+  padding: 0;
+}

@@ -37,6 +37,10 @@ io.on('connection', (socket) => {
         io.emit('updateContent', content);
     });
 
+    socket.on('revealWinner', (content) => {
+        io.emit('revealWinner', content);
+    });
+
     socket.on('disconnect', () => {
         console.log('User disconnected');
     });

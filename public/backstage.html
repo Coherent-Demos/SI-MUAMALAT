@@ -5,21 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backstage Page</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Backstage Page</h1>
-    
-    <button onclick="changeBroadcastContent('image-1')">Button 1</button>
-    <button onclick="changeBroadcastContent('image-2')">Button 2</button>
+    <div class="container mt64">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="pb32">Backstage</h1>
+                <div class="dropdown">
+                    <div class="font-14 text-300 pb8">Select a Draw Number</div>
+                    <button id="drawDropDownButton" button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Draw Number
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="drawDropDown">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="font-14 text-300 pb8 mt32">Track the Draw Event</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1"><input oninput="checkDrawButton(2)" id="number-1" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(3)" id="number-2" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(4)" id="number-3" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(5)" id="number-4" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(6)" id="number-5" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(7)" id="number-6" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(8)" id="number-7" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(9)" id="number-8" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(10)" id="number-9" type="text" class="w-100 text-center" name=""></div>
+            <div class="col-1"><input oninput="checkDrawButton(11)" id="number-10" type="text" class="w-100 text-center" name=""></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button id="selectWinnersButton" button class="btn btn-primary mt16" type="button" onclick="selectwinners(ActiveDrawNumber)" disabled>Select Winners</button>
+            </div>
+            <div class="col-12">
+                <div class="font-14 text-300 pb8 mt32">Winners</div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="winnersContainerHeaders">
+        <div class="row">
+            <div class="col">
+                <strong>Rank</strong>
+            </div>
+            <div class="col">
+                <strong>Winner</strong>
+            </div>
+            <div class="col">
+                <strong>Prize</strong>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="winnersContainer">
+    </div>
+
+
+
+
 </body>
 </html>
 
+<!-- dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
-<script src="config.js"></script>
+
+<!-- web socket  -->
 <script>
     const socket = io.connect('https://seashell-app-vx5ae.ondigitalocean.app');
+    // const socket = io.connect('http://localhost:3000');
 
     function changeBroadcastContent(content) {
         socket.emit('updateContent', content);
     }
+
+    function revealWinner(content) {
+        socket.emit('revealWinner', content);
+    }
 </script>
+
+<!-- AJAX  -->
+<script type="text/javascript" src="./backstage.js"></script>
