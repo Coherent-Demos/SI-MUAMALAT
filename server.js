@@ -5,6 +5,7 @@ const http = require('http');
 const socketIO = require('socket.io');
 const path = require('path');
 const dotenv = require('dotenv');
+const cors = require('cors'); // Import the cors middleware
 
 dotenv.config(); // Load environment variables from .env file
 
