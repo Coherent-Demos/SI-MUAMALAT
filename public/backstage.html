@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produce Page</title>
+    <title>Backstage Page</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-    <h1>Producer Page</h1>
+    <h1>Backstage Page</h1>
     
-    <button onclick="changeBroadcastContent('Content for Button 1')">Button 1</button>
-    <button onclick="changeBroadcastContent('Content for Button 2')">Button 2</button>
+    <button onclick="changeBroadcastContent('image-1')">Button 1</button>
+    <button onclick="changeBroadcastContent('image-2')">Button 2</button>
 </body>
 </html>
 
@@ -17,11 +18,7 @@
 <script>
     const socket = io.connect('http://localhost:3000');
 
-    socket.on('updateContent', (content) => {
-        updateBroadcastContent(content);
-    });
-
-    function updateBroadcastContent(content) {
-        document.getElementById('broadcast-content').innerText = content;
+    function changeBroadcastContent(content) {
+        socket.emit('updateContent', content);
     }
 </script>

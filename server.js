@@ -4,6 +4,9 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 const path = require('path');
+const dotenv = require('dotenv');
+
+dotenv.config(); // Load environment variables from .env file
 
 const app = express();
 const server = http.createServer(app);
@@ -37,7 +40,9 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3000;
+const SERVER_URL = process.env.SERVER_URL || 'http://localhost:3000';
 
 server.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+    console.log(`WebSocket server is at ${SERVER_URL}`);
 });
