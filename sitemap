@@ -1,0 +1,6 @@
+/project-root
+|-- /public
+|   |-- broadcast.html
+|   |-- produce.html
+|-- server.js
+|-- package.json
