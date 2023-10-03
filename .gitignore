@@ -6,3 +6,5 @@ coverage/
 .tmp/
 dist/
 dist.zip
+.DS_Store
+public/.DS_Store

@@ -149,7 +149,7 @@ function DrawMaintenanceAPICall() {
             drawNumbersProcessed.forEach(drawNumber => {
                 const dropdownItem = document.createElement('a');
                 dropdownItem.classList.add('dropdown-item');
-                dropdownItem.textContent = drawNumber;
+                dropdownItem.textContent = drawNumber + '.xlsx';
                 dropdownMenu.appendChild(dropdownItem);
                 dropdownItem.onclick = () => selectDraw(drawNumber)
             });

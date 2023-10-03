@@ -30,6 +30,10 @@ app.get('/backstage', (req, res) => {
     res.sendFile(path.join(publicPath, 'backstage.html'));
 });
 
+app.get('/predraw', (req, res) => {
+    res.sendFile(path.join(publicPath, 'pre-draw.html'));
+});
+
 io.on('connection', (socket) => {
     console.log('A user connected');
 
